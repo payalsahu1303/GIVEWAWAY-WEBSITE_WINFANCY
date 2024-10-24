@@ -1,0 +1,664 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif; /* Font matching the UI, adjust if necessary */
+  }
+  
+  .header {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem; /* Matching the font size */
+    font-weight: 700; /* Bold for logo text */
+    color: #333; /* Adjust to match the design */
+  }
+  
+  .logo-img {
+    width: 50px; /* Size of the logo image, adjust based on the actual logo */
+    margin-right: 10px; /* Space between logo image and text */
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #333;
+  }
+  
+  .sign-in-btn {
+    background-color: #6C63FF; /* Purple button color matching the UI */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sign-in-btn:hover {
+    background-color: #574BFF;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      margin-top: 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links li {
+      margin: 0.5rem 0;
+    }
+  
+    .sign-in-btn {
+      margin-top: 1rem;
+    }
+  }
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #f5faff, #e6f0ff, #fdfaff); /* Custom gradient */
+    padding: 100px 80px; /* Top and side padding to match spacing */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-content {
+    max-width: 50%; /* Ensuring the text takes half the width */
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem; /* Larger headline font size */
+    font-weight: 700; /* Bold font style */
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 20px;
+    line-height: 1.2; /* Tight line spacing for the heading */
+    font-family: 'Poppins', sans-serif; /* Font used */
+  }
+  
+  .hero p {
+    font-size: 1.25rem; /* Font size for the paragraph */
+    color: #666; /* Slightly lighter text color */
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Gap between button and people joined info */
+  }
+  
+  .start-btn {
+    background-color: #6C63FF; /* Purple color matching the UI */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .start-btn:hover {
+    background-color: #574BFF;
+  }
+  
+  .joined-people {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .joined-people img {
+    width: 50px; /* Adjusted size for the people icons */
+    height: auto;
+  }
+  
+  .joined-people p {
+    font-size: 1rem; /* Font size for joined people text */
+    color: #666;
+  }
+  
+  .joined-people strong {
+    font-size: 1.1rem; /* Emphasized text size */
+    color: #333; /* Darker color for emphasis */
+  }
+  
+  .hero-img {
+    max-width: 45%; /* Gift box image takes up less space */
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @media (max-width: 1024px) {
+    .hero {
+      flex-direction: column;
+      padding: 50px 30px;
+    }
+  
+    .hero-content {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .hero-img {
+      margin-top: 30px;
+      max-width: 60%;
+    }
+  }
+/* Get Lucky Section Styling */
+.get-lucky {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #ffffff;
+  }
+  
+  .get-lucky-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .get-lucky h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .get-lucky p {
+    font-size: 1.25rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Card Styling */
+  .get-lucky-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+  
+  .card {
+    background: linear-gradient(135deg, #f3f4f6, #fff); /* Gradient to match the UI */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer, more modern shadow */
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* More depth on hover */
+  }
+  
+  .card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 1024px) {
+    .get-lucky-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+/* Worldwide Winners Section */
+.worldwide-winners {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #f5faff, #e6f0ff, #fdfaff); /* Custom gradient */
+  }
+  
+  .winners-header {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .winners-header h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; /* Ensure matching font */
+  }
+  
+  .winners-header p {
+    font-size: 1.25rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* World Map Styling */
+  .world-map {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .map-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* Slight rounding for a softer look */
+  }
+  
+  /* Winner Icons */
+  .winner-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Disabling hover effects */
+  }
+  
+  .winner-icon {
+    position: absolute;
+    transform: translate(-50%, -50%); /* Center icon positioning */
+  }
+  
+  .winner-icon img {
+    width: 60px; /* Adjust size as per the UI */
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Light shadow to add depth */
+  }
+  
+  @media (max-width: 1024px) {
+    .winner-icon img {
+      width: 50px; /* Smaller icons for mobile */
+      height: 50px;
+    }
+  }
+/* VIP Section Styling */
+.vip {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #ffffff; /* White background */
+  }
+  
+  .vip-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .vip h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000; /* Dark color */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .vip p {
+    font-size: 1.25rem;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  
+  .vip-btn {
+    font-size: 1.25rem;
+    background-color: #0066ff; /* Button background color */
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .vip-btn:hover {
+    background-color: #0044cc; /* Darker blue on hover */
+  }
+  
+  /* VIP Members Styling */
+  .vip-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+    margin-top: 50px;
+  }
+  
+  .member {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Circular shape */
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow around the circle */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .member:hover {
+    transform: scale(1.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
+  
+  .member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits the circle */
+  }
+  
+  @media (max-width: 1024px) {
+    .vip-members {
+      justify-content: space-around;
+    }
+  
+    .member {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  /* Winners Section Styling */
+.winners-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.winners-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Left Section - World Map and Winners */
+.winners-map-section {
+  flex: 1;
+  position: relative;
+}
+
+.map {
+  position: relative;
+  max-width: 600px;
+  margin-right: 20px;
+}
+
+.world-map {
+  width: 100%;
+  height: auto;
+}
+
+.winner-avatar {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 6px solid white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.winner-avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.winner-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.winner-name {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Right Section - Text Content */
+.winners-text-section {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.winners-text-section h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.winners-text-section p {
+  font-size: 1.25rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .winners-container {
+    flex-direction: column;
+  }
+
+  .winners-map-section {
+    margin-bottom: 40px;
+  }
+
+  .winner-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .winner-name {
+    font-size: 0.9rem;
+  }
+}
+
+/* Footer Section Styling */
+.footer-section {
+  background: linear-gradient(135deg, #c9e1fa, #e6f0ff, #fdfaff); /* Custom gradient */
+  padding: 40px 20px;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-left img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-contact-info p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-contact-info i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  flex: 2;
+}
+
+.footer-links-column {
+  margin-right: 30px;
+}
+
+.footer-links-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links-column li {
+  margin-bottom: 10px;
+}
+
+.footer-links-column li a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links-column li a i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.footer-links-column li a:hover {
+  color: #007bff;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-right p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  color: #007bff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #666;
+}
+
+.footer-bottom a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #007bff;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links-column {
+    margin-bottom: 20px;
+  }
+}
