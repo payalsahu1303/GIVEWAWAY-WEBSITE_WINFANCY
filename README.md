@@ -1,12 +1,12 @@
-# WinFrenzy - Giveaway Landing Page 
+# WinFancy - Giveaway Landing Page 
 
-A modern,  landing page for **WinFrenzy**, a giveaway platform designed to offer users a seamless experience to enter and win exclusive prizes. The design focuses on a clean, professional aesthetic, with a user-friendly layout and stunning animations.
+A modern,  landing page for **WinFancy**, a giveaway platform designed to offer users a seamless experience to enter and win exclusive prizes. The design focuses on a clean, professional aesthetic, with a user-friendly layout and stunning animations.
 
 ![output](https://github.com/user-attachments/assets/b212b52c-79a7-4935-ae02-8cfdf252f045)
 
 ## About the Project
 
-The **WinFrenzy Giveaway Landing Page** is designed to attract and engage users with an intuitive and visually appealing UI. The website provides users an easy way to enter giveaways, view worldwide winners, and get involved with VIP memberships or collaborations.
+The **WinFancy Giveaway Landing Page** is designed to attract and engage users with an intuitive and visually appealing UI. The website provides users an easy way to enter giveaways, view worldwide winners, and get involved with VIP memberships or collaborations.
 
 This project focuses on:
 - Modern, gradient-based design.
